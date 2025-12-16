@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03", "Demo03\Demo03.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04", "Demo04\Demo04.csproj", "{10795C13-9173-400A-A65A-50BCCA9A74E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExerciceMonopoly", "ExerciceMonopoly", "{E60094FC-DE70-4D54-975C-2DE924BEA055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Monopoly", "Exo-Monopoly\Exo-Monopoly.csproj", "{83EDAC06-ADFC-48C1-953C-F99B3DB1DEEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{10795C13-9173-400A-A65A-50BCCA9A74E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10795C13-9173-400A-A65A-50BCCA9A74E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10795C13-9173-400A-A65A-50BCCA9A74E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83EDAC06-ADFC-48C1-953C-F99B3DB1DEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83EDAC06-ADFC-48C1-953C-F99B3DB1DEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83EDAC06-ADFC-48C1-953C-F99B3DB1DEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83EDAC06-ADFC-48C1-953C-F99B3DB1DEEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{1538D0F3-4A1F-4EB6-A704-45E93547B342} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{821ACFA0-F5B8-45AB-8D97-A08C6A4FFA1B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{10795C13-9173-400A-A65A-50BCCA9A74E3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{83EDAC06-ADFC-48C1-953C-F99B3DB1DEEC} = {E60094FC-DE70-4D54-975C-2DE924BEA055}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73741D40-EF33-4A3C-870B-8DC297E56B68}
