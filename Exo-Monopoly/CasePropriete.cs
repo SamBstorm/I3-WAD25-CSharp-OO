@@ -24,7 +24,12 @@ namespace Exo_Monopoly
 
         public void Acheter(Joueur acheteur)
         {
-            //...Tant que Joueur n'est pas à jour, je ne peux pas faire la méthode...
+            if(acheteur.Solde >= Prix)
+            {
+                acheteur.Payer(Prix);
+                Proprietaire = acheteur;
+                acheteur.AjouterPropriete(this);
+            }
         }
 
     }

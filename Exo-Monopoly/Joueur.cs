@@ -9,11 +9,25 @@ namespace Exo_Monopoly
 {
     public class Joueur
     {
+        private List<CasePropriete> _proprietes;
+
+
+        public CasePropriete[] Proprietes
+        {
+            get { return _proprietes.ToArray(); }
+        }
         public string Nom { get; set; }
         public Pions Pion { get; set; }        
         public int Position { get; private set; }
         public int Solde { get; private set; }
 
+        public Joueur(string nom, Pions pion)
+        {
+            Nom = nom;
+            Pion = pion;
+            Solde = 1500;
+            _proprietes = new List<CasePropriete>();
+        }
         public bool Avancer()
         {
             //De.valeurMin = 1;
@@ -24,6 +38,27 @@ namespace Exo_Monopoly
                 Position += lances[i];
             }
             return lances[0] == lances[1];
+        }
+        public void EtrePayer(int montant)
+        {
+            if (montant > 0)
+            {
+                Solde += montant;
+            }
+        }
+        public void Payer(int montant)
+        {
+            if(montant > 0 && Solde >= montant)
+            {
+                Solde -= montant;
+            }
+        }
+        public void AjouterPropriete(CasePropriete propriete)
+        {
+            if(propriete.Proprietaire == this && !_proprietes.Contains(propriete))
+            {
+                _proprietes.Add(propriete);
+            }
         }
     }
 }

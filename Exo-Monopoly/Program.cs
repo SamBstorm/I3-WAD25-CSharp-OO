@@ -15,7 +15,7 @@ namespace Exo_Monopoly
                 Console.WriteLine(lance);
             }*/
 
-            /* Test de la class Joueur */
+            /* Test de la class Joueur 
 
             Joueur j1 = new Joueur() { 
                 Nom = "Samuel",
@@ -29,7 +29,22 @@ namespace Exo_Monopoly
             {
                 Console.WriteLine("Super un double!");
             }
-            Console.WriteLine($"Vous avancer à la case {j1.Position}");
+            Console.WriteLine($"Vous avancer à la case {j1.Position}");*/
+
+            /* Test de la class CasePropriete */
+
+            Random RNG = new Random();
+            Couleurs[] couleurs = Enum.GetValues<Couleurs>();
+            CasePropriete casePlateau = new CasePropriete("Classe des WAD", couleurs[RNG.Next(couleurs.Length)], 500 );
+
+            Joueur j1 = new Joueur("Samuel", Pions.Dino);
+            casePlateau.Acheter(j1);
+
+            Console.WriteLine($"{j1.Nom} avec le pion {j1.Pion} a actuellement {j1.Solde} crédit Monopoly, et possède {j1.Proprietes.Length} propriété(s)");
+            foreach (CasePropriete prop in j1.Proprietes)
+            {
+                Console.WriteLine($"\t- {prop.Nom} ({prop.Couleur}) à {prop.Proprietaire?.Nom ?? "Disponible"}");
+            }
         }
     }
 }
