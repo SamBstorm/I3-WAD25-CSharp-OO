@@ -15,22 +15,21 @@ namespace Exo_Monopoly
                 Console.WriteLine(lance);
             }*/
 
-            /* Test de la class Joueur 
+            /* Test de la class Joueur */
 
             Joueur j1 = new Joueur() { 
-                nom = "Samuel",
-                pion = Pions.Dino,
-                position = 0
+                Nom = "Samuel",
+                Pion = Pions.Dino
             };
 
-            Console.WriteLine($"Le premier joueur : {j1.nom} ; va jouer avec le pion {j1.pion}.");
-            Console.WriteLine($"{j1.nom} vous êtes en case {j1.position}, lancer les dés!");
+            Console.WriteLine($"Le premier joueur : {j1.Nom} ; va jouer avec le pion {j1.Pion}.");
+            Console.WriteLine($"{j1.Nom} vous êtes en case {j1.Position}, lancer les dés!");
             Console.ReadLine();
             if (j1.Avancer())
             {
                 Console.WriteLine("Super un double!");
             }
-            Console.WriteLine($"Vous avancer à la case {j1.position}");*/
+            Console.WriteLine($"Vous avancer à la case {j1.Position}");
         }
     }
 }

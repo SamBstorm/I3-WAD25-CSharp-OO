@@ -9,9 +9,10 @@ namespace Exo_Monopoly
 {
     public class Joueur
     {
-        public string nom;
-        public Pions pion;
-        public int position;
+        public string Nom { get; set; }
+        public Pions Pion { get; set; }        
+        public int Position { get; private set; }
+        public int Solde { get; private set; }
 
         public bool Avancer()
         {
@@ -20,7 +21,7 @@ namespace Exo_Monopoly
             int[] lances = De.Lancer(2);
             for (int i = 0; i < lances.Length; i++)
             {
-                position += lances[i];
+                Position += lances[i];
             }
             return lances[0] == lances[1];
         }
